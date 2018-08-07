@@ -102,3 +102,7 @@ docker images
 - [Bash 사용법](https://github.com/AI-Trolls/docker-tutorial/tree/master/bash_tutorial)
 - Dockfile 작성 후 build 하는 방법
 - 등등
+
+
+## 추가 참고자료
+- https://seokjun.kim/docker-nginx-node/
