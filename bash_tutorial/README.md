@@ -117,3 +117,27 @@ if [ $a -eq $b ]; then
   echo $a
 fi
 ```
+- 반복문
+```
+for i in $(ls)
+do
+  echo $i
+done 
+
+NUM=(1 2 3)
+for i in ${NUM[@]}
+do 
+  echo $i
+done
+
+for ((i=0; i < 10; i++ ))
+do
+  echo $i
+done
+
+while :
+do
+  echo "Hello World"
+  sleep 1;
+done
+```
