@@ -75,3 +75,25 @@ docker start hello
 ```
 docker attach hello
 ```
+- /bin/bash를 통하지 않고, **외부에서 컨테이너 안의 명령 실행**
+  - docker exec <컨테이너 이름> <명령> <매개 변수>
+  - 외부에서 apt-get, yum을 이용한 패키지 설치 혹은 데몬 실행시 활용 가능!
+```
+docker exec hello echo "hello world"
+```
+- **컨테이너 정지**
+  - docker stop <컨테이너 이름>
+```
+docker ps 후
+docker stop hello
+```
+- **컨테이너 삭제**
+```
+docker rm hello
+```
+- **이미지 삭제**
+  - docker rmi <이미지 이름>:<태그>
+```
+docker rmi ubuntu:latest
+docker images
+```
