@@ -97,3 +97,8 @@ docker rm hello
 docker rmi ubuntu:latest
 docker images
 ```
+
+## 기본적인 명령어 이외의 것들은 별도의 디렉터리에..
+- Bash 사용법
+- Dockfile 작성 후 build 하는 방법
+- 등등
