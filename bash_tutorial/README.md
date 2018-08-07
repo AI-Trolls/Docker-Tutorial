@@ -92,3 +92,14 @@ WORLD=
 WORLD=${WORLD:-"abcd"}
 echo $WORLD
 ```
+- 한 줄로된 명령어 여러줄로 나누어 표현
+```
+sudo docker run \
+  -d \
+  --name hello \
+  busybox:latest
+```
+- 연속된 숫자 표현
+```
+echo {1..10}}
+```
