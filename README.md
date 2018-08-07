@@ -15,7 +15,7 @@ docker 정리
   - 이미지 용량 줄어듬
   - 하드웨어 가상화 계층 x (mem, file system, network 속도 VM에 비해 매우 빠름)
 
-### Docker Image, Container
+### Docker Image, Container?
 - base image ; 리눅스 배포판의 유저랜드만 설치된 파일
   - OS에는 **kernel / user** space 존재
   - 유저랜드란, user space에서 실행되는 파일과 라이브러리
@@ -25,3 +25,7 @@ docker 정리
   - 즉, 바뀐 부분만 이미지로 생성한 뒤, 부모 이미지를 계속 참조
 - **docker container** 라고 하면, 이미지를 실행한 상태를 의미. 
   - 하나의 이미지로 여러개의 컨테이너 생성 가능
+
+### 설치
+- 는 알아서
+
