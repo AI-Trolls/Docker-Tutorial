@@ -7,7 +7,7 @@ docker 정리
 - 서비스 운영 환경을 이미지로 생성해서 배포한다
 
 ### Virtual Machine은 느리다
-- 항상 guest OS를 설치해야 하는 VM => 이미지 용량이 커짐
+- 항상 guest OS를 설치해야 하는 VM &rightarrow; 이미지 용량이 커짐
 - Docker는?
   - guest OS 필요 x
   - Docker Image에 서버 운영을 위해 필요한 것만 다로 설치
