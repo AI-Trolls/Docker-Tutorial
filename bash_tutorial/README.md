@@ -39,3 +39,16 @@ abcd > abc.txt 2>&1
 ```
 ls -al | grep .txt
 ```
+- Bash의 변수 갖다 쓰기
+```
+hello = "Hello world"
+echo $hello
+```
+- 명령 실행 결과 변수화
+  - 명령 실행 결과를 변수에 저장할 때 사용
+  - 명령 실행 결과를 다른 명령의 매개변수로 넘길 때 사용
+  - 문자열 안에 명령 실행결과 넣을 때 사용
+```
+sudo docker rm $(docker ps -aq)
+echo $(date)
+```
