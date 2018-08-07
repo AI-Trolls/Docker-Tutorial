@@ -101,5 +101,19 @@ sudo docker run \
 ```
 - 연속된 숫자 표현
 ```
-echo {1..10}}
+echo {1..10}
+```
+- 문자열 여러개 지정하여 명령어 실행 횟수 줄이기
+```
+cp ./{hello.txt, world.txt} hello-dir/
+```
+- 조건문
+  - 숫자 비교
+    - eq : 같다, ne : 같지 않다, gt : 초과, ge : 이상, lt : 미만, le : 이하
+  - 문자 비교
+    - =, == : 같다, != : 같지 않다, -z : 문자열이 NULL일 때, -n : 문자열이 NULL이 아닐 때
+```
+if [ $a -eq $b ]; then
+  echo $a
+fi
 ```
