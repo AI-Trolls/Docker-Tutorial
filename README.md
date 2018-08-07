@@ -32,21 +32,46 @@ docker 정리
 
 ### 주요 명령어들
 - **[주의]** : root 권한 필요, 혹은 현재 계정을 docker 그룹에 포함
-```shell
+```
 sudo usermod -aG docker ${USER}
 sudo service docker restart
 ```
-- docker hub로 부터 ubuntu 이미지 검색
+- docker hub로 부터 ubuntu **이미지 검색**
 ```
 docker search ubuntu
 ```
-- docker hub로 부터 이미지(이미지이름:태그) 받기
+- docker hub로 부터 **이미지(이미지이름:태그) 받기**
   - latest는 최신
   - 당연히 centos에서 ubuntu 이미지 실행 가능
 ```
 docker pull ubuntu:latest
 ```
-- 이미지 목록 출력, 추가 옵션으로 이름 넣을 수 있음
+- **이미지 목록 출력**, 추가 옵션으로 이름 넣을 수 있음
 ```
 docker images 
+```
+- **컨테이너 생성**
+  - 이미지를 컨테이너화 한 이후에 bash셸 실행하기
+  - docker run <옵션> <이미지 이름> <실행할 파일>
+  - i, t 옵션 지정시 실행된 bash셸에 입출력 가능
+```
+docker run -i -t --name hello ubuntu /bin/bash
+```
+- **컨테이너 목록 확인**
+  - a옵션 ; 정지된 컨테이너까지 보여줌
+```
+docker ps -a
+```
+- **컨테이너 시작**
+  - 재시작은 restart
+```
+docker start hello
+```
+- **컨테이너에 접속**
+  - 생성시 /bin/bash를 실행해야만 쉘에 접속해 명령을 입력할 수 있고
+  - 그렇지 않다면 서버의 출력만 볼 수 있다.
+  - 접속 후 **ctrl + D** 를 입력하면 컨테이너가 정지되고
+  - **ctrl + P, ctrl + Q**를 차례대로 입력함으로써 컨테이너를 정지하지 않고 빠져나올 수 있다.
+```
+docker attach hello
 ```
