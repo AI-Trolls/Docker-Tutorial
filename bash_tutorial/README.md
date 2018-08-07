@@ -79,13 +79,13 @@ echo "\$hello \" \`"
 - 변수 치환
   - 문자열 안에서 변수 출력시 사용
   - 변수의 기본값 설정할 때도 사용 (변수가 없으면 **-** 뒷 부분으로 초기화)
-  - **:-** 을 사용하면, 값이 NULL일 경우에도 기본 값 대입
+  - **:-** 을 사용하면, 값이 NULL일 경우에 기본 값 대입
 ```
 str="World"
 echo "Hello ${str}"
 
 HELLO=
-HELLO=${HELLO-"abcd"}
+HELLO=${HELLO-"abcd"} # 현재 HELLO가 NULL이기 때문에 기본값 설정 안됨
 echo $HELLO
 
 WORLD=
