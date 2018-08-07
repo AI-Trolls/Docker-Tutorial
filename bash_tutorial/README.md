@@ -68,3 +68,20 @@ echo "$USER"
 echo "Host name is $(hostname)"
 echo "Time: `date`"
 ```
+- 명령어 안에서 다시 명령어 실행할 때 "안에 '를 넣어 활용
+```
+bash -c "bin/echo Hello 'World'"
+```
+- 이스케이핑 백슬래쉬 \\
+```
+echo "\$hello \" \`"
+```
+- 변수 치환
+  - 문자열 안에서 변수 출력시 사용
+  - 변수의 기본값 설정할 때도 사용 (변수가 없으면 **-** 뒷 부분으로 초기화)
+  - **:-** 을 사용하면, 값이 NULL일 경우에도 기본 값 대입
+```
+str="World"
+echo "Hello ${str}"
+HELLO=${HELLO-"abcd"}
+```
