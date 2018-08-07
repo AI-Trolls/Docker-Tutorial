@@ -36,5 +36,17 @@ docker 정리
 sudo usermod -aG docker ${USER}
 sudo service docker restart
 ```
-- docker search ubuntu ; docker hub로 부터 ubuntu 이미지 검색
-- 
+- docker hub로 부터 ubuntu 이미지 검색
+```
+docker search ubuntu
+```
+- docker hub로 부터 이미지(이미지이름:태그) 받기
+  - latest는 최신
+  - 당연히 centos에서 ubuntu 이미지 실행 가능
+```
+docker pull ubuntu:latest
+```
+- 이미지 목록 출력, 추가 옵션으로 이름 넣을 수 있음
+```
+docker images 
+```
