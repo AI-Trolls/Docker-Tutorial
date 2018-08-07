@@ -29,3 +29,12 @@ docker 정리
 ### 설치
 - 는 알아서
 
+
+### 주요 명령어들
+- **[주의]** : root 권한 필요, 혹은 현재 계정을 docker 그룹에 포함
+```shell
+sudo usermod -aG docker ${USER}
+sudo service docker restart
+```
+- docker search ubuntu ; docker hub로 부터 ubuntu 이미지 검색
+- 
