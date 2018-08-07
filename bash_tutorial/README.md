@@ -8,6 +8,7 @@ echo "hello" > ./hello.txt
 echo "hello" > /dev/null
 ```
 - 입력 리다이렉션
+  - "파일"의 내용을 읽어 stdin으로 바꿔줌
 ```
 cat < ./hello.txt
 ```
@@ -140,4 +141,31 @@ do
   echo "Hello World"
   sleep 1;
 done
+```
+- 문자열을 명령의 stdin으로 보냄
+  - <과 비슷하지만 다름
+```
+cat <<< "User name is $USER"
+```
+- 여러줄의 문자열을 명령의 stdin으로 보냄
+```
+cat > ./hello.txt <<EOF
+Hell
+llo
+Host name is $(hostname)
+EOF
+```
+- 환경 변수로 만들기
+```
+export HELLO=world
+```
+- 포맷팅해서 출력
+  - 파이프와 연동해서 명령에 값 입력하는 효과를 낼 수도
+  - 예시에선 80 엔터 exampleuser 엔터 y 의 효과
+```
+printf 80\\nexampleuser\\ny | example-config
+```
+- 텍스트 파일 문자열 변경
+```
+sed -i "s/hello/world/g" hello.txt
 ```
