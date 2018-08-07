@@ -83,5 +83,12 @@ echo "\$hello \" \`"
 ```
 str="World"
 echo "Hello ${str}"
+
+HELLO=
 HELLO=${HELLO-"abcd"}
+echo $HELLO
+
+WORLD=
+WORLD=${WORLD:-"abcd"}
+echo $WORLD
 ```
