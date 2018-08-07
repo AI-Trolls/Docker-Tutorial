@@ -2,7 +2,7 @@
 Docker 이미지 생성시 자주 사용하는 Bash 문법 복습스
 
 - 출력 리다이렉션
-  - >> 두번쓰면 파일에 이어붙임
+  - \>\> 두번쓰면 파일에 이어붙임
 ```
 echo "hello" > ./hello.txt
 echo "hello" > /dev/null
