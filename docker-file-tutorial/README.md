@@ -1,5 +1,8 @@
+# Dockerfile & build Tutorial
+Dockerfile 만들어서 빌드 후 이미지 생성 예시
 
-
+### Dockfile
+- 디렉터리 만들고, Dockfile을 만든 후 아래와 같은 방식으로 만든다 
 ```
 # 어떤 이미지 기반으로 할지 설정
 FROM ubuntu:14.04
@@ -27,3 +30,5 @@ CMD ["nginx"]
 EXPOSE 80
 EXPOSE 443
 ```
+
+## [간단한 node app 컨테이너 만들기](https://github.com/AI-Trolls/docker-tutorial/tree/master/docker-file-tutorial/node-app)
