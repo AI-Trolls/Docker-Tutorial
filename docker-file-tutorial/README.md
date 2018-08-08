@@ -1,7 +1,7 @@
 # Dockerfile & build Tutorial
 Dockerfile 만들어서 빌드 후 이미지 생성 예시
 
-### Dockfile
+### Dockerfile
 - 디렉터리 만들고, Dockfile을 만든 후 아래와 같은 방식으로 만든다 
 ```
 # 어떤 이미지 기반으로 할지 설정
@@ -29,6 +29,25 @@ CMD ["nginx"]
 # 호스트와 연결할 포트
 EXPOSE 80
 EXPOSE 443
+```
+
+### Dockerfile 빌드하기
+- Dockerfile이 있는 디렉터리로 가서 빌드 명령어 실행
+- 이미지가 생성된다
+```
+docker build --tag ImageName:Tag .
+docker images
+```
+
+### 실행
+- 컨테이너 안에서 서버가 실행되는 경우엔, host 포트와 연동이 필요한 경우가 있다.
+- 그 땐 -p 옵션으로 포트 바인딩을 시켜줄 수 있다.
+```
+docker run --name ContainerName -p 5000:3000 ImageName:Tag
+```
+- -v 옵션을 이용해서 host의 disk 공간을 공유할수도 있다.
+```
+docker run --name ContainerName -p 80:80 /tmp:/tmp ImageName:Tag
 ```
 
 ### 추가 예제
