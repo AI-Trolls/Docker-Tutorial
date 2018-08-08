@@ -31,4 +31,6 @@ EXPOSE 80
 EXPOSE 443
 ```
 
-## [간단한 node app 컨테이너 만들기](https://github.com/AI-Trolls/docker-tutorial/tree/master/docker-file-tutorial/node-app)
+### 추가 예제
+- [간단한 node app 컨테이너 만들기](https://github.com/AI-Trolls/docker-tutorial/tree/master/docker-file-tutorial/node-app)
+  - 참고자료: https://seokjun.kim/docker-nginx-node/
