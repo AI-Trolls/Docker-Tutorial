@@ -130,7 +130,7 @@ docker inspect node-nginx
 ## 가능한 것들
 - 개인 Docker Hub 쉽게 구축 가능
 - Docker 컨테이너 끼리 연결 가능 (link 옵션)
-- 다른 서버의 컨테이너로도 연결 가능
+- 다른 서버의 컨테이너로도 연결 가능(Ambassador container 이용)
 - 호스트의 디스크 공간 공유 가능
 - 컨테이너의 자원(CPU, MEM) 제한 가능 ([참고](https://www.serverlab.ca/tutorials/containers/docker/how-to-limit-memory-and-cpu-for-docker-containers/))
 
