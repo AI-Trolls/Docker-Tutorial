@@ -108,7 +108,7 @@ docker images
 - Docker 컨테이너 끼리 연결 가능 (link 옵션)
 - 다른 서버의 컨테이너로도 연결 가능
 - 호스트의 디스크 공간 공유 가능
-- 컨테이너의 자원(CPU, MEM) 제한 가능[참고](https://www.serverlab.ca/tutorials/containers/docker/how-to-limit-memory-and-cpu-for-docker-containers/)
+- 컨테이너의 자원(CPU, MEM) 제한 가능 ([참고](https://www.serverlab.ca/tutorials/containers/docker/how-to-limit-memory-and-cpu-for-docker-containers/))
 
 ## 추가 참고자료
 - node 배포, https://seokjun.kim/docker-nginx-node/
