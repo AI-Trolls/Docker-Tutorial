@@ -98,7 +98,7 @@ docker rmi ubuntu:latest
 docker images
 ```
 
-## 기본적인 명령어 이외의 것들은 별도의 디렉터리에..
+## Dockerfile 작성 및 Build 방법
 - [Bash 사용법](https://github.com/AI-Trolls/docker-tutorial/tree/master/bash_tutorial)
 - [Dockfile 작성 후 build 하는 방법](https://github.com/AI-Trolls/docker-tutorial/tree/master/docker-file-tutorial)
 - 등등
