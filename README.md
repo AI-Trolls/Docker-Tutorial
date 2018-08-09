@@ -113,6 +113,14 @@ docker cp <컨테이너이름>:/etc/nginx/nginx.conf ./
 docker commit <옵션> <컨테이너 이름> <이미지 이름>:<태그>
 docker commit -a "Jein Song <jeinsong@zum.com>" -m "커밋 메시지" node-nginx node-nginx-image:0.2
 ```
+- 컨테이너의 변경 부분 확인(생성 이미지 기준으로 실행 후 변경된 것들)
+```
+docker diff <컨테이너 이름>
+```
+- 이미지 혹은 컨테이너 세부 정보 출력
+```
+docker inspect node-nginx
+```
 
 ## Dockerfile 작성 및 Build 방법
 - [Bash 사용법](https://github.com/AI-Trolls/docker-tutorial/tree/master/bash_tutorial)
