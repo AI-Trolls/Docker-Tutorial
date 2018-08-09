@@ -1,0 +1,4 @@
+  File "aa.py", line 1
+    asda f+ 1213
+         ^
+SyntaxError: invalid syntax

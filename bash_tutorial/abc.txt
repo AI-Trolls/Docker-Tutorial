@@ -1,0 +1,6 @@
+No command 'abcd' found, did you mean:
+ Command 'abcde' from package 'abcde' (universe)
+ Command 'ascd' from package 'ascd' (universe)
+ Command 'bcd' from package 'bsdgames' (universe)
+ Command 'lbcd' from package 'lbcd' (universe)
+abcd: command not found

@@ -1,0 +1,35 @@
+proxy_cache_path /data/cache/nginx/cache/
+								levels:1:2
+								keys_zone=CACHE:100m
+								inactive=7d
+								max_size=100g;
+
+upstream fts-group {
+	server fts1:3000;
+	server fts2:3000;
+	server fts3:3000;
+	server fts4:3000;
+}
+
+server {
+	listen 80;
+	server_name localhost;
+
+	location / {
+		return 404;
+	}
+	
+	location ~* \.(jpeg|gif|png|jpg) {
+		proxy_cache CACHE;
+		proxy_cache_valid 200 30m;
+		add_header X-Proxy-Cache $upstream_cache_status;
+		add_header Cache-Control "public";
+		expires 10d;
+
+		proxy_pass http://fts-group;
+	}
+
+	# error / access log는 host volume에 기록하기
+}
+
+# ref. https://www.lesstif.com/pages/viewpage.action?pageId=35357063

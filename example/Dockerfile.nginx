@@ -1,0 +1,6 @@
+FROM nginx:latest
+
+RUN rm /etc/nginx/site-available/default.conf
+COPY ./nginx.conf /etc/nginx/site-available/default.conf
+
+RUN nginx -s reload
