@@ -42,12 +42,13 @@ docker images
 ### 실행
 - 컨테이너 안에서 서버가 실행되는 경우엔, host 포트와 연동이 필요한 경우가 있다.
 - 그 땐 -p 옵션으로 포트 바인딩을 시켜줄 수 있다.
+- -d 옵션으로 백그라운드 실행 가능.
 ```
-docker run --name ContainerName -p 5000:3000 ImageName:Tag
+docker run --name ContainerName -d -p 5000:3000 ImageName:Tag
 ```
 - -v 옵션을 이용해서 host의 disk 공간을 공유할수도 있다.
 ```
-docker run --name ContainerName -p 80:80 /tmp:/tmp ImageName:Tag
+docker run --name ContainerName -d -p 80:80 -v /tmp:/tmp ImageName:Tag
 ```
 
 ### 추가 예제
