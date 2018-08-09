@@ -1,8 +1,8 @@
 proxy_cache_path /data/cache/nginx/cache/
-								levels:1:2
-								keys_zone=CACHE:100m
-								inactive=7d
-								max_size=100g;
+		levels:1:2
+		keys_zone=CACHE:100m
+		inactive=7d
+		max_size=100g;
 
 upstream fts-group {
 	server fts1:3000;
