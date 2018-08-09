@@ -53,7 +53,7 @@ docker images
 - **컨테이너 생성**
   - 이미지를 컨테이너화 한 이후에 bash셸 실행하기
   - docker run <옵션> <이미지 이름> <실행할 파일>
-  - i, t 옵션 지정시 실행된 bash셸에 입출력 가능
+  - i, t 옵션 지정시 실행된 bash셸에 입출력 가능 (물론 -it 로 쓸 수 있음)
 ```
 docker run -i -t --name hello ubuntu /bin/bash
 ```
