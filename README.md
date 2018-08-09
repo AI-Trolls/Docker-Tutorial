@@ -98,6 +98,22 @@ docker rmi ubuntu:latest
 docker images
 ```
 
+## 그 외 명령어
+- 이미지 history 조회
+```
+docker history <이미지이름>:<태그>
+```
+- 컨테이너로 부터 호스트로 파일 꺼내기(복사)
+```
+docker cp <컨테이너이름>:/etc/nginx/nginx.conf ./
+```
+- 현재 컨테이너의 변경사항 이미지로 생성
+  - 다른 명령어에서도 마찬가지이지만 컨테이너 이름엔 ID를 적어도 됨
+```
+docker commit <옵션> <컨테이너 이름> <이미지 이름>:<태그>
+docker commit -a "Jein Song <jeinsong@zum.com>" -m "커밋 메시지" node-nginx node-nginx-image:0.2
+```
+
 ## Dockerfile 작성 및 Build 방법
 - [Bash 사용법](https://github.com/AI-Trolls/docker-tutorial/tree/master/bash_tutorial)
 - [Dockfile 작성 후 build 하는 방법](https://github.com/AI-Trolls/docker-tutorial/tree/master/docker-file-tutorial)
