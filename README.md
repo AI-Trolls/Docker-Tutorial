@@ -98,7 +98,7 @@ docker rmi ubuntu:latest
 docker images
 ```
 
-## 그 외 명령어
+### 그 외 명령어
 - 이미지 history 조회
 ```
 docker history <이미지이름>:<태그>
