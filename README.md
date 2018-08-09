@@ -128,7 +128,7 @@ docker inspect node-nginx
 - 등등
 
 ## 가능한 것들
-- 개인 Docker Hub 쉽게 구축 가능
+- 개인 Docker Hub 쉽게 구축 가능 (docker registry server)
 - Docker 컨테이너 끼리 연결 가능 (link 옵션)
 - 다른 서버의 컨테이너로도 연결 가능(Ambassador container 이용)
 - 호스트의 디스크 공간 공유 가능
