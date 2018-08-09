@@ -113,3 +113,4 @@ docker images
 ## 추가 참고자료
 - node 배포, https://seokjun.kim/docker-nginx-node/
 - images 저장 경로 변경, http://kisow.github.io/blog/2015/10/28/docker-image-gyeongro-byeongyeonghagi/
+- Dockerfile과 docker-compose 사용법, https://gompro.postype.com/post/1735800
