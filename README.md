@@ -138,6 +138,8 @@ docker inspect node-nginx
 
 ## 추가 참고자료
 - node 배포, https://seokjun.kim/docker-nginx-node/
-- Docker Images 저장 경로 변경, http://kisow.github.io/blog/2015/10/28/docker-image-gyeongro-byeongyeonghagi/
+- Docker Images 저장 경로 변경
+  - http://kisow.github.io/blog/2015/10/28/docker-image-gyeongro-byeongyeonghagi/
+  - https://sanenthusiast.com/change-default-image-container-location-docker/
 - Dockerfile과 docker-compose 사용법, https://gompro.postype.com/post/1735800
 - nginx 띄우기, http://blog.woniper.net/313
