@@ -157,4 +157,4 @@ docker inspect node-nginx
 
 - Dockerfile과 docker-compose 사용법, https://gompro.postype.com/post/1735800
 - nginx 띄우기, http://blog.woniper.net/313
-  - nginx 공홈 dockerfile https://docs.docker.com/samples/library/nginx/#hosting-some-simple-static-content
+  - docker 공홈 nginx dockerfile https://docs.docker.com/samples/library/nginx/#hosting-some-simple-static-content
