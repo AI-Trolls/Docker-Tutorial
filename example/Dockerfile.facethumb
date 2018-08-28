@@ -1,7 +1,13 @@
-# ref. https://github.com/fbcotter/docker-tensorflow-opencv/blob/master/Dockerfile
-
+# Dockerfile with tensorflow cpu support on python3, opencv3.3
 FROM tensorflow/tensorflow:1.4.1-py3
 MAINTAINER Jein Song <aimaster@zuminternet.com>
+
+# The code below is all based off the repos made by https://github.com/janza/
+
+ENV LC_ALL C.UTF-8
+ENV LANG C.UTF-8
+
+COPY ../facethumb /root/facethumb
 
 RUN apt-get update
 
@@ -32,8 +38,11 @@ RUN pip3 --no-cache-dir install \
     h5py \
     scipy \
     py3nvml \
-    mtcnn
-
+	flask \
+	flask_cors \
+	mtcnn \
+	scikit_image \
+	gunicorn
 
 WORKDIR /
 ENV OPENCV_VERSION="3.4.1"
@@ -61,5 +70,3 @@ RUN wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip \
 && make install \
 && rm /${OPENCV_VERSION}.zip \
 && rm -r /opencv-${OPENCV_VERSION}
-
-RUN pip3 --no-cache-dir install opencv-python
