@@ -54,3 +54,14 @@ docker run --name ContainerName -d -p 80:80 -v /tmp:/tmp ImageName:Tag
 ### 추가 예제
 - [간단한 node app 컨테이너 만들기](https://github.com/AI-Trolls/docker-tutorial/tree/master/docker-file-tutorial/node-app)
   - 참고자료: https://seokjun.kim/docker-nginx-node/
+
+
+### UTF-8 설정
+```
+  RUN apt-get install -y locales
+  ENV LANG ko_KR.UTF-8
+  ENV LANGUAGE ko_KR:UTF-8
+  ENV LC_ALL ko_KR.UTF-8
+```
+- 뭐 요런식으로 하면 되는듯 하다.
+- [참조](https://tetzzang.com/docker-%ED%95%9C%EA%B8%80-%EB%AC%B8%EC%A0%9C%EC%99%80-timezone-%EC%88%98%EC%A0%95%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/)
