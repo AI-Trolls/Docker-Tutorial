@@ -57,14 +57,15 @@ docker run --name ContainerName -d -p 80:80 -v /tmp:/tmp ImageName:Tag
 
 
 ### UTF-8 설정
+- 한글 설정을 원하면 요런식으로 하면 되는듯 하다.
 ```
   RUN apt-get install -y locales
   ENV LANG ko_KR.UTF-8
   ENV LANGUAGE ko_KR:UTF-8
   ENV LC_ALL ko_KR.UTF-8
 ```
-- 뭐 요런식으로 하면 되는듯 하다.
 - 그냥 UTF-8로 설정하는 것만으로 실행에 문제가 없다면
+- 아래와 같이 하는 것으로 충분하다.
 ```
   ENV LC_ALL C.UTF-8
   ENV LANG C.UTF-8
