@@ -140,7 +140,7 @@ docker inspect node-nginx
 - node 배포, https://seokjun.kim/docker-nginx-node/
 - Docker Images 저장 경로 변경
   ```
-  # /user/lib/systemd/system/docker.service
+  # /usr/lib/systemd/system/docker.service
   ~~~~ 생략
   ExceStart=/user/bin/docker -g /새로운경로
   ~~~~ 생략
