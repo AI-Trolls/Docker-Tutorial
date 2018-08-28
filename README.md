@@ -27,7 +27,7 @@ docker 정리
   - 하나의 이미지로 여러개의 컨테이너 생성 가능
 
 ### 설치
-- 는 알아서
+- [는 알아서](https://docs.docker.com/install/linux/docker-ce/centos)
 - [일반](http://pyrasis.com/book/DockerForTheReallyImpatient/Chapter02)
 - [centos](http://www.kwangsiklee.com/2017/07/centos%EC%97%90%EC%84%9C-docker-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/)
 
