@@ -32,11 +32,11 @@ RUN pip3 --no-cache-dir install \
     h5py \
     scipy \
     py3nvml \
-		mtcnn \
+    mtcnn
 
 
 WORKDIR /
-ENV OPENCV_VERSION="2.4.9"
+ENV OPENCV_VERSION="3.4.1"
 RUN wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip \
 && unzip ${OPENCV_VERSION}.zip \
 && mkdir /opencv-${OPENCV_VERSION}/cmake_binary \
@@ -61,6 +61,5 @@ RUN wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip \
 && make install \
 && rm /${OPENCV_VERSION}.zip \
 && rm -r /opencv-${OPENCV_VERSION}
-
 
 RUN pip3 --no-cache-dir install opencv-python
