@@ -146,8 +146,9 @@ docker inspect node-nginx
   ~~~~ 생략
   ```
   - 수정한 다음, sudo systemctl restart docker를 때려준다.
-  - http://kisow.github.io/blog/2015/10/28/docker-image-gyeongro-byeongyeonghagi/
-  - https://sanenthusiast.com/change-default-image-container-location-docker/
+  - 참고
+    - http://kisow.github.io/blog/2015/10/28/docker-image-gyeongro-byeongyeonghagi/
+    - https://sanenthusiast.com/change-default-image-container-location-docker/
 
 - Dockerfile과 docker-compose 사용법, https://gompro.postype.com/post/1735800
 - nginx 띄우기, http://blog.woniper.net/313
