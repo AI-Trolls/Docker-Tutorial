@@ -64,4 +64,9 @@ docker run --name ContainerName -d -p 80:80 -v /tmp:/tmp ImageName:Tag
   ENV LC_ALL ko_KR.UTF-8
 ```
 - 뭐 요런식으로 하면 되는듯 하다.
+- 그냥 UTF-8로 설정하는 것만으로 실행에 문제가 없다면
+```
+  ENV LC_ALL C.UTF-8
+  ENV LANG C.UTF-8
+```
 - [참조](https://tetzzang.com/docker-%ED%95%9C%EA%B8%80-%EB%AC%B8%EC%A0%9C%EC%99%80-timezone-%EC%88%98%EC%A0%95%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/)
