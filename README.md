@@ -145,6 +145,7 @@ docker inspect node-nginx
   ExceStart=/user/bin/docker -g /새로운경로
   ~~~~ 생략
   ```
+  - 수정한 다음, sudo systemctl restart docker를 때려준다.
   - http://kisow.github.io/blog/2015/10/28/docker-image-gyeongro-byeongyeonghagi/
   - https://sanenthusiast.com/change-default-image-container-location-docker/
 
