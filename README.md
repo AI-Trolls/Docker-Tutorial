@@ -82,6 +82,10 @@ docker attach hello
 ```
 docker exec hello echo "hello world"
 ```
+- run 할 때, /bin/bash를 명시하지 않아도, 다음과 같이 접속할 수 있네
+```
+docker exec -it [CONTAINER ID] /bin/bash
+```
 - **컨테이너 정지**
   - docker stop <컨테이너 이름>
 ```
