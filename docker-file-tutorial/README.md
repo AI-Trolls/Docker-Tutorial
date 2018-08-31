@@ -32,6 +32,11 @@ EXPOSE 443
 ```
 #### RUN, CMD, ENTRYPOINT 차이 (중요)
 - http://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/
+  - RUN : 베이스 이미지에 레이어를 하나하나 더해가는 역할
+  - CMD : run과 함께 실행되는 명령을 추가 
+    - docker run할 때 맨뒤에 추가하는 명령과 같은 것
+    - 하지만, docker run할 때 명령이 명시되면 CMD 부분은 무시됨
+  - ENTRYPOINT : run될 때마다 항상 실행되야 하는 명령 (서버 실행, 디비 실행 등)
 
 ### Dockerfile 빌드하기
 - Dockerfile이 있는 디렉터리로 가서 빌드 명령어 실행
