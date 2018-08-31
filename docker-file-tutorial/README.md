@@ -30,7 +30,7 @@ CMD ["nginx"]
 EXPOSE 80
 EXPOSE 443
 ```
-#### RUN, CMD 차이
+#### RUN, CMD, ENTRYPOINT 차이 (중요)
 - http://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/
 
 ### Dockerfile 빌드하기
