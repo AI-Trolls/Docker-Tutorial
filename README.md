@@ -64,6 +64,9 @@ docker images
   - [run 옵션](http://pyrasis.com/book/DockerForTheReallyImpatient/Chapter20/28)
   - [run 읽을거리](https://bestna.wordpress.com/2014/11/10/docker-container-run-%EC%9D%B4%EC%95%BC%EA%B8%B0/)
   - [run cpu 및 mem 제한하기](https://docs.docker.com/config/containers/resource_constraints/#configure-the-default-cfs-scheduler)
+    ```
+    docker run --name hello --cpus="4" -d -P myappImage:test
+    ```
 ```
 docker run -i -t --name hello ubuntu /bin/bash
 ```
