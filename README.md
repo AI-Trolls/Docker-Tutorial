@@ -60,6 +60,7 @@ docker images
     - 백그라운드로 실행하지 않으면 컨테이너 안에서 foreground로 실행되고 있는 프로세스의 출력화면이 보인다
       - 컨테이너 내부에 foreground로 실행되는 프로세스가 없다면 
         바로 exit되는 것 같다 (매우 중요!!!!, 이것 때문에 몇시간 날려묵음 ..)
+      - [flask, gunicorn, supervisor](https://github.com/Leafney/docker-flask/blob/master/py3/app/conf/supervisor_flask.ini)
 ```
 docker run -i -t --name hello ubuntu /bin/bash
 ```
