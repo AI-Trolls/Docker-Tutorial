@@ -62,6 +62,7 @@ docker images
         바로 exit되는 것 같다 (매우 중요!!!!, 이것 때문에 몇시간 날려묵음 ..)
       - [flask, gunicorn, supervisor](https://github.com/Leafney/docker-flask/blob/master/py3/app/conf/supervisor_flask.ini)
   - [run 옵션](http://pyrasis.com/book/DockerForTheReallyImpatient/Chapter20/28)
+  - [run 읽을거리](https://bestna.wordpress.com/2014/11/10/docker-container-run-%EC%9D%B4%EC%95%BC%EA%B8%B0/)
 ```
 docker run -i -t --name hello ubuntu /bin/bash
 ```
