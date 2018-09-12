@@ -149,7 +149,9 @@ docker inspect node-nginx
 - 등등
 
 ## docker-compose로 여러 컨테이너 관리하기
-  - docker-compose 파일 버전은 https://docs.docker.com/compose/compose-file에서 시스템의 도커 버전에 따라 선택
+  - docker-compose.yml을 정의하고 docker-compose up / down 명령어로 명시된 컨테이너를 한방에 키고 끌 수 있는 기능!!
+    - docker와 별도로 설치해줘야 한다. centos라서 curl을 통해 [설치](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7)했음
+    - docker-compose 파일 버전은 https://docs.docker.com/compose/compose-file에서 시스템의 도커 버전에 따라 선택
   - [tour of docker-compose](https://medium.freecodecamp.org/the-ups-and-downs-of-docker-compose-how-to-run-multi-container-applications-bf7a8e33017e)
   - [docker/compose 기본에 대한 좋은 참고자료](http://raccoonyy.github.io/docker-usages-for-dev-environment-setup/)
   - [docker compose 설치](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7)
