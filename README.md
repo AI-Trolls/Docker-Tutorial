@@ -148,6 +148,16 @@ docker inspect node-nginx
 - [Dockfile 작성 후 build 하는 방법](https://github.com/AI-Trolls/docker-tutorial/tree/master/docker-file-tutorial)
 - 등등
 
+## docker-compose로 여러 컨테이너 관리하기
+  - [tour of docker-compose](https://medium.freecodecamp.org/the-ups-and-downs-of-docker-compose-how-to-run-multi-container-applications-bf7a8e33017e)
+  - [docker/compose 기본에 대한 좋은 참고자료](http://raccoonyy.github.io/docker-usages-for-dev-environment-setup/)
+  - [docker compose 설치](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7)
+  - [Dockerfile과 docker-compose 사용법 mongodb/nginx/redis 예시](https://gompro.postype.com/post/1735800)
+  - https://blog.osg.kr/archives/186
+  - [기초 사용법](http://seulcode.tistory.com/238)
+  - [사용법 및 예제](https://pages.wiserain.com/articles/cheatsheet-docker-compose/)
+  - 
+
 ## 가능한 것들
 - 개인 Docker Hub 쉽게 구축 가능 (docker registry server)
 - Docker 컨테이너 끼리 연결 가능 (link 옵션)
@@ -160,13 +170,6 @@ docker inspect node-nginx
 
 
 ## 추가 참고자료
-- docker/compose 기본에 대한 좋은 참고자료, http://raccoonyy.github.io/docker-usages-for-dev-environment-setup/
-  - [docker compose 설치](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7)
-  - [Dockerfile과 docker-compose 사용법 mongodb/nginx/redis 예시](https://gompro.postype.com/post/1735800)
-  - https://blog.osg.kr/archives/186
-  - [기초 사용법](http://seulcode.tistory.com/238)
-  - [사용법 및 예제](https://pages.wiserain.com/articles/cheatsheet-docker-compose/)
-  - 
 - node 배포, https://seokjun.kim/docker-nginx-node/
 - Docker Images 저장 경로 변경
   ```
