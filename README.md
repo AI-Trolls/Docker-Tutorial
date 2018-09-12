@@ -158,7 +158,7 @@ docker inspect node-nginx
       version: "3.5"
 
       # [TODO before docker-compose up] have to modify nginx/nginx_proxy.conf depend on the number of worker
-      #
+      
       services:
         worker:
           image: facethumb:alpha
