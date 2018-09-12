@@ -162,6 +162,7 @@ docker inspect node-nginx
 ## 추가 참고자료
 - docker/compose 기본에 대한 좋은 참고자료, http://raccoonyy.github.io/docker-usages-for-dev-environment-setup/
   - [docker compose 설치](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7)
+  - Dockerfile과 docker-compose 사용법, https://gompro.postype.com/post/1735800
 - node 배포, https://seokjun.kim/docker-nginx-node/
 - Docker Images 저장 경로 변경
   ```
@@ -174,8 +175,6 @@ docker inspect node-nginx
   - 참고
     - http://kisow.github.io/blog/2015/10/28/docker-image-gyeongro-byeongyeonghagi/
     - https://sanenthusiast.com/change-default-image-container-location-docker/
-
-- Dockerfile과 docker-compose 사용법, https://gompro.postype.com/post/1735800
 - nginx 띄우기, http://blog.woniper.net/313
   - docker blog https://blog.docker.com/2015/04/tips-for-deploying-nginx-official-image-with-docker/
   - docker 공홈 nginx dockerfile https://docs.docker.com/samples/library/nginx/#hosting-some-simple-static-content
