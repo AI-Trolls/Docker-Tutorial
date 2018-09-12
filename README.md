@@ -162,7 +162,11 @@ docker inspect node-nginx
 ## 추가 참고자료
 - docker/compose 기본에 대한 좋은 참고자료, http://raccoonyy.github.io/docker-usages-for-dev-environment-setup/
   - [docker compose 설치](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7)
-  - Dockerfile과 docker-compose 사용법, https://gompro.postype.com/post/1735800
+  - [Dockerfile과 docker-compose 사용법 mongodb/nginx/redis 예시](https://gompro.postype.com/post/1735800)
+  - https://blog.osg.kr/archives/186
+  - [기초 사용법](http://seulcode.tistory.com/238)
+  - [사용법 및 예제](https://pages.wiserain.com/articles/cheatsheet-docker-compose/)
+  - 
 - node 배포, https://seokjun.kim/docker-nginx-node/
 - Docker Images 저장 경로 변경
   ```
