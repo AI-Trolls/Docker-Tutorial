@@ -149,6 +149,7 @@ docker inspect node-nginx
 - 등등
 
 ## docker-compose로 여러 컨테이너 관리하기
+  - docker-compose 파일 버전은 https://docs.docker.com/compose/compose-file에서 시스템의 도커 버전에 따라 선택
   - [tour of docker-compose](https://medium.freecodecamp.org/the-ups-and-downs-of-docker-compose-how-to-run-multi-container-applications-bf7a8e33017e)
   - [docker/compose 기본에 대한 좋은 참고자료](http://raccoonyy.github.io/docker-usages-for-dev-environment-setup/)
   - [docker compose 설치](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7)
