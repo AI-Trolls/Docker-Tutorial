@@ -160,7 +160,8 @@ docker inspect node-nginx
 
 
 ## 추가 참고자료
-- docker 기본에 대한 좋은 참고자료, http://raccoonyy.github.io/docker-usages-for-dev-environment-setup/
+- docker/compose 기본에 대한 좋은 참고자료, http://raccoonyy.github.io/docker-usages-for-dev-environment-setup/
+  - [docker compose 설치](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7)
 - node 배포, https://seokjun.kim/docker-nginx-node/
 - Docker Images 저장 경로 변경
   ```
