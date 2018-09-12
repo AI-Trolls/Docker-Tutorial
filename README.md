@@ -171,6 +171,7 @@ docker inspect node-nginx
     - 이후에 docker-compose up --scale worker=3 -d 명령을 통해 proxy 컨테이너를 3대 띄우고
     - 모두 한방에 종료하는 방법은 docker-compose down
     - 매우 간편하다
+    - http://jaynewho.com/post/21 이거 좋은 자료인거같은데 추가로 읽어보기
   - [tour of docker-compose](https://medium.freecodecamp.org/the-ups-and-downs-of-docker-compose-how-to-run-multi-container-applications-bf7a8e33017e)
   - [매우 간단한 사용법 및 예제](https://pages.wiserain.com/articles/cheatsheet-docker-compose/)
   - [기초 사용법](http://seulcode.tistory.com/238)
