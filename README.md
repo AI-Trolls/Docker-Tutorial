@@ -153,6 +153,24 @@ docker inspect node-nginx
   - docker-compose.yml을 정의하고 docker-compose up / down 명령어로 명시된 컨테이너를 한방에 키고 끌 수 있는 기능!!
     - docker와 별도로 설치해줘야 한다. centos라서 curl을 통해 [설치](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7)했음
     - docker-compose 파일 버전은 [링크](https://docs.docker.com/compose/compose-file)에서 시스템의 도커 버전에 따라 선택
+  - 실제 내가 사용한 docker-compose 구성
+    ```yaml
+version: "3.5"
+
+# [TODO before docker-compose up] have to modify nginx/nginx_proxy.conf depend on the number of worker
+#
+services:
+  worker:
+    image: facethumb:alpha
+
+  proxy: 
+    build:
+      context: ./nginx/
+    image: proxy:latest
+    ports:
+      - '22223:80'
+
+    ```
   - [tour of docker-compose](https://medium.freecodecamp.org/the-ups-and-downs-of-docker-compose-how-to-run-multi-container-applications-bf7a8e33017e)
   - [매우 간단한 사용법 및 예제](https://pages.wiserain.com/articles/cheatsheet-docker-compose/)
   - [기초 사용법](http://seulcode.tistory.com/238)
