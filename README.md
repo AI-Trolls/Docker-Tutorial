@@ -160,6 +160,7 @@ docker inspect node-nginx
 
 
 ## 추가 참고자료
+- docker 기본에 대한 좋은 참고자료, http://raccoonyy.github.io/docker-usages-for-dev-environment-setup/
 - node 배포, https://seokjun.kim/docker-nginx-node/
 - Docker Images 저장 경로 변경
   ```
