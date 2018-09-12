@@ -156,9 +156,6 @@ docker inspect node-nginx
   - 실제 내가 사용한 docker-compose 구성
     ```
       version: "3.5"
-
-      # [TODO before docker-compose up] have to modify nginx/nginx_proxy.conf depend on the number of worker
-      
       services:
         worker:
           image: facethumb:alpha
