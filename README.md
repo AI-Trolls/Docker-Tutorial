@@ -159,7 +159,6 @@ docker inspect node-nginx
   - https://blog.osg.kr/archives/186
   - [기초 사용법](http://seulcode.tistory.com/238)
   - [사용법 및 예제](https://pages.wiserain.com/articles/cheatsheet-docker-compose/)
-  - 
 
 ## 가능한 것들
 - 개인 Docker Hub 쉽게 구축 가능 (docker registry server)
