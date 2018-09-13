@@ -1,5 +1,5 @@
 # Docker-Tutorial
-docker 정리 
+docker 정리, xxx 책을 간단히 정리하고 직접 하면서 겪었던 시행착오 정리 + 최신내용 보충
 
 ### Docker
 - 클라우드 환경의 급속한 성장
@@ -144,7 +144,7 @@ docker inspect node-nginx
 ```
 
 ## Dockerfile 작성 및 Build 방법
-- [Bash 사용법](https://github.com/AI-Trolls/docker-tutorial/tree/master/bash_tutorial)
+- [Bash 사용법](https://github.com/AI-Trolls/docker-tutorial/tree/master/bash_tutorial) -> 그냥 몰라도 된다!!!! 알필요 거의 없음
 - [Dockfile 작성 후 build 하는 방법](https://github.com/AI-Trolls/docker-tutorial/tree/master/docker-file-tutorial)
 - 등등
 
