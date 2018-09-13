@@ -168,6 +168,15 @@ docker inspect node-nginx
             - '22223:80'
 
     ```
+    - compose 하는 법을 모를 때는 참고로, 각 이미지를 각각 빌드한 뒤 아래와 같은 과정을 거쳤음...
+      (워커가 늘어나면 늘어나는대로..)
+      - compose는 디폴트로 네트워크가 구성되서 서비스들끼리는 통신이 가능하다고 들었는데 실제로 그렇다.
+      ```
+      docker network create facethumb-network
+      docker run --name facethumb1 -d -P --cpus="4" --network facethumb-network facethumb:alpha
+      docker run --name facethumb2 -d -P --cpus="4" --network facethumb-network facethumb:alpha
+      docker run --name proxy -d -p 22223:80 --network facethumb-network proxy:test
+      ```
     - 이후에 docker-compose up --scale worker=3 -d 명령을 통해 proxy 컨테이너를 3대 띄우고
     - 모두 한방에 종료하는 방법은 docker-compose down
     - 매우 간편하다
