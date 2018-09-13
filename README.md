@@ -150,7 +150,11 @@ docker inspect node-nginx
 
 ## docker-compose로 여러 컨테이너 관리하기
   - [공식문서-회사에서안들가짐](docs.docker.com/compose/compose-file/#context)
-  - docker-compose.yml을 정의하고 docker-compose up / down 명령어로 명시된 컨테이너를 한방에 키고 끌 수 있는 기능!!
+  - docker-compose.yml을 정의하고 아래의 명령어로 명시된 컨테이너를 한방에 키고 끌 수 있는 기능!!
+    ```
+    docker-compose up -d
+    docker-compose down
+    ```
     - docker와 별도로 설치해줘야 한다. centos라서 curl을 통해 [설치](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7)했음
     - docker-compose 파일 버전은 [링크](https://docs.docker.com/compose/compose-file)에서 시스템의 도커 버전에 따라 선택
   - 실제 내가 사용한 docker-compose 구성
@@ -168,8 +172,8 @@ docker inspect node-nginx
             - '22223:80'
 
     ```
-    - compose 하는 법을 모를 때는 참고로, 각 이미지를 각각 빌드한 뒤 아래와 같은 과정을 거쳤음...
-      (워커가 늘어나면 늘어나는대로..)
+    - compose 하는 법을 모를 때는 참고로, 각 이미지를 각각 빌드한 뒤 아래와 같은 과정을 거쳤음...  
+      (워커가 늘어나면 늘어나는대로.. 일일히 하나하나 키고, 끄고)
       - compose는 디폴트로 네트워크가 구성되서 서비스들끼리는 통신이 가능하다고 들었는데 실제로 그렇다.
       ```
       docker network create facethumb-network
