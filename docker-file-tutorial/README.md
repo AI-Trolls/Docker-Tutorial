@@ -31,6 +31,7 @@ EXPOSE 80
 EXPOSE 443
 ```
 #### RUN, CMD, ENTRYPOINT 차이 (중요)
+- https://m.blog.naver.com/PostView.nhn?blogId=freepsw&logNo=220982529575&proxyReferer=https%3A%2F%2Fwww.google.com%2F
 - http://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/
   - RUN : 베이스 이미지에 레이어를 하나하나 더해가는 역할
   - CMD : run과 함께 실행되는 명령을 추가 
