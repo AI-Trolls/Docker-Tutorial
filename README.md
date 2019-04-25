@@ -191,6 +191,8 @@ docker inspect node-nginx
   - [약간 디테일한 참고자료](http://raccoonyy.github.io/docker-usages-for-dev-environment-setup/)
   - [mongodb/nginx/redis 예시](https://gompro.postype.com/post/1735800)
   - [nginx/wordpress 예시](https://blog.osg.kr/archives/186)
+  - [디팬던시 제어1](https://8thlight.com/blog/dariusz-pasciak/2016/10/17/docker-compose-wait-for-dependencies.html)
+  - [디팬던시 제어2](https://jupiny.com/2016/11/13/conrtrol-container-startup-order-in-compose/)
 
 ## 가능한 것들
 - 개인 Docker Hub 쉽게 구축 가능 (docker registry server)
