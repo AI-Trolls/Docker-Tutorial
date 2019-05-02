@@ -193,6 +193,7 @@ docker inspect node-nginx
   - [nginx/wordpress 예시](https://blog.osg.kr/archives/186)
   - [디팬던시 제어1](https://8thlight.com/blog/dariusz-pasciak/2016/10/17/docker-compose-wait-for-dependencies.html)
   - [디팬던시 제어2](https://jupiny.com/2016/11/13/conrtrol-container-startup-order-in-compose/)
+  - [시스템 부팅 시 켜기](https://stackoverflow.com/questions/43671482/how-to-run-docker-compose-up-d-at-system-start-up/46529084)
 
 ## 가능한 것들
 - 개인 Docker Hub 쉽게 구축 가능 (docker registry server)
