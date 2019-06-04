@@ -204,6 +204,7 @@ docker inspect node-nginx
 - 도커 로깅에 대해...
   - https://www.freecodecamp.org/news/how-to-setup-log-rotation-for-a-docker-container-a508093912b2/
   - 디폴트 위치는 /var/lib/docker/containers/[container-id]/[container-id]-json.log
+  - https://medium.com/@yoanis_gil/logging-with-docker-part-1-1-965cb5e17165
   - https://medium.com/@yoanis_gil/logging-with-docker-part-1-b23ef1443aac
 
 ## 가능한 것들
