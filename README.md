@@ -195,6 +195,17 @@ docker inspect node-nginx
   - [디팬던시 제어2](https://jupiny.com/2016/11/13/conrtrol-container-startup-order-in-compose/)
   - [시스템 부팅 시 켜기](https://stackoverflow.com/questions/43671482/how-to-run-docker-compose-up-d-at-system-start-up/46529084)
 
+
+## **docker swarm**으로 여러 컨테이너 유연하게 관리하기
+- swarm에 대해 정리한 블로그
+  - https://www.sauru.so/blog/run-a-service-on-docker-swarm/
+  - https://hidekuma.github.io/docker/swarm/docker-swarm/
+  - https://subicura.com/2017/02/25/container-orchestration-with-docker-swarm.html#%EC%84%9C%EB%B2%84-%EC%98%A4%EC%BC%80%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%9D%B4%EC%85%98-server-orchestration
+- 도커 로깅에 대해...
+  - https://www.freecodecamp.org/news/how-to-setup-log-rotation-for-a-docker-container-a508093912b2/
+  - 디폴트 위치는 /var/lib/docker/containers/[container-id]/[container-id]-json.log
+
+
 ## 가능한 것들
 - 개인 Docker Hub 쉽게 구축 가능 (docker registry server)
 - Docker 컨테이너 끼리 연결 가능 (link 옵션)
