@@ -27,7 +27,48 @@ docker 정리, xxx 책을 간단히 정리하고 직접 하면서 겪었던 시�
   - 하나의 이미지로 여러개의 컨테이너 생성 가능
 
 ### 설치
-- [는 알아서](https://docs.docker.com/install/linux/docker-ce/centos)
+- Ubuntu
+  - 설치 명령어
+    ```
+     sudo apt-get update
+     sudo apt-get install docker-ce docker-ce-cli containerd.io
+    ```
+  - 잘 설치되었는지 확인하기 위해 hello-world 이미지 실행
+    ```
+      sudo docker run hello-world
+    ```
+  - 한방에 설치가 안된다면, 아래의 절차를 차근차근!
+    - 혹시 old version이 있으면 삭제
+      ```bash
+      sudo apt-get remove docker docker-engine docker.io containerd runc
+      ```
+    - apt 패키지 색인을 업데이트하고, apt가 https를 통해 저장소를 사용할 수 있도록 관련 패키지 설치
+      ```
+      sudo apt-get update
+
+      sudo apt-get install \
+        apt-transport-https \
+        ca-certificates \
+        curl \
+        gnupg-agent \
+        software-properties-common
+      ```
+    - 도커의 공식 GPG키 추가
+      ```
+      curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+      ```
+    - 안정적인 저장소를 설치하려면 nightly, test 대신 stable을 사용
+      ```
+      sudo add-apt-repository \
+         "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+         $(lsb_release -cs) \
+         stable"
+      ```
+    - (기도하며) 도커 설치!
+      ```
+       sudo apt-get update
+       sudo apt-get install docker-ce docker-ce-cli containerd.io
+      ```
 - [일반](http://pyrasis.com/book/DockerForTheReallyImpatient/Chapter02)
 - [centos](http://www.kwangsiklee.com/2017/07/centos%EC%97%90%EC%84%9C-docker-%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/)
 
